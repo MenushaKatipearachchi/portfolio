@@ -81,12 +81,14 @@ const HeroSection = () => {
                 </div>
 
                 <Link
-                  href="mailto:ekettipearachchi@gmail.com"
+                  href="https://shorturl.at/cIOsy"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-block p-0.5 rounded-full bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)] shrink-0"
                 >
                   <span className="flex items-center justify-center gap-3 min-w-[190px] whitespace-nowrap bg-primary hover:bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)] py-2.5 px-6 rounded-full">
                     <Image src={withBasePath("/images/icon/spark-icon.svg")} alt="spark-icon" width={14} height={14} />
-                    <span className="text-base font-semibold text-white">Get in touch</span>
+                    <span className="text-base font-semibold text-white">Download CV</span>
                   </span>
                 </Link>
               </div>
