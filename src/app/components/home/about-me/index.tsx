@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { withBasePath } from "@/lib/utils";
 
 const AboutMe = () => {
   const coreTools = [
@@ -21,7 +22,10 @@ const AboutMe = () => {
   return (
     <section>
       <div className="container">
-        <div className="border-x border-primary/10 bg-[url('/images/about-me/about-me-bg.svg')] bg-cover bg-center bg-no-repeat">
+        <div
+          className="border-x border-primary/10 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url('${withBasePath("/images/about-me/about-me-bg.svg")}')` }}
+        >
           <div className="flex flex-col gap-10 sm:gap-12 max-w-3xl mx-auto px-4 sm:px-7 py-11 md:py-20">
             <div className="flex flex-col gap-4">
               <p className="text-sm tracking-[2px] text-primary uppercase font-medium">About</p>

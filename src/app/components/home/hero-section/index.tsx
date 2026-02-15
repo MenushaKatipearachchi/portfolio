@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { withBasePath } from "@/lib/utils";
 
 const HeroSection = () => {
-  const bannerImageSrc = "/images/hero-sec/banner-bg-img.png?v=20260214-2309";
+  const bannerImageSrc = withBasePath("/images/hero-sec/banner-bg-img.png?v=20260214-2309");
 
   const socialLinks = [
     {
@@ -42,7 +43,7 @@ const HeroSection = () => {
             <div className="absolute top-0 -translate-y-1/2">
               <div className="relative w-[8rem] h-[8rem] rounded-full overflow-hidden border-4 border-white shadow-sm">
                 <Image
-                  src="/images/hero-sec/user-img.png"
+                  src={withBasePath("/images/hero-sec/user-img.png")}
                   alt="Menusha Eshan Katipearachchi"
                   width={104}
                   height={104}
@@ -84,7 +85,7 @@ const HeroSection = () => {
                   className="inline-block p-0.5 rounded-full bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)] shrink-0"
                 >
                   <span className="flex items-center justify-center gap-3 min-w-[190px] whitespace-nowrap bg-primary hover:bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)] py-2.5 px-6 rounded-full">
-                    <Image src="/images/icon/spark-icon.svg" alt="spark-icon" width={14} height={14} />
+                    <Image src={withBasePath("/images/icon/spark-icon.svg")} alt="spark-icon" width={14} height={14} />
                     <span className="text-base font-semibold text-white">Get in touch</span>
                   </span>
                 </Link>

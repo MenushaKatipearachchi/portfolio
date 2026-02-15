@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { experienceData } from "@/app/data/page-data";
+import { withBasePath } from "@/lib/utils";
 
 const Experience = () => {
   return (
@@ -21,7 +22,7 @@ const Experience = () => {
                     key={`${value.company}-${index}`}
                     className="flex flex-col gap-5 border-dashed border-b border-primary/10 last:border-b-0 pt-8 sm:pt-10 pb-8 sm:pb-10 first:pt-0 last:pb-0"
                   >
-                    <Image src={value.icon} alt="company-icon" width={28} height={28} />
+                    <Image src={withBasePath(value.icon)} alt="company-icon" width={28} height={28} />
                     <div className="flex flex-wrap gap-5 items-center justify-between">
                       <div className="flex flex-col gap-1">
                         <h5>{value.role}</h5>

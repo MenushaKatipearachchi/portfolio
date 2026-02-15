@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { projectOverviewData } from "@/app/data/page-data";
+import { withBasePath } from "@/lib/utils";
 
 const ProjectOverview = () => {
   return (
@@ -16,7 +17,7 @@ const ProjectOverview = () => {
                 <Link href={projectOverviewData.publication.url} className="group flex items-center gap-2" target="_blank" rel="noreferrer">
                   <h4>{projectOverviewData.publication.title}</h4>
                   <Image
-                    src="/images/icon/tile-arrow-icon.svg"
+                    src={withBasePath("/images/icon/tile-arrow-icon.svg")}
                     alt="arrow"
                     width={24}
                     height={24}

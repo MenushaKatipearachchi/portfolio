@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { featuredWorkData } from "@/app/data/featured-work";
+import { withBasePath } from "@/lib/utils";
 
 const FeaturedWork = () => {
   return (
@@ -37,7 +38,7 @@ const FeaturedWork = () => {
                     className="overflow-hidden h-56 bg-white border border-primary/10 rounded-md"
                   >
                     <Image
-                      src={value.image}
+                      src={withBasePath(value.image)}
                       alt={value.title}
                       width={490}
                       height={300}
