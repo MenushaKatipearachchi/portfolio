@@ -31,7 +31,7 @@ export type Reference = {
 
 export type ProjectOverviewData = {
   publication: Publication;
-  award: { title: string; project: string; event: string };
+  award: { title: string; project: string; event: string; certificateUrl: string };
   references: Reference[];
 };
 
@@ -116,6 +116,7 @@ export const projectOverviewData: ProjectOverviewData = {
     title: "Best Presentation Award",
     project: "Intelligent Systems for Comprehensive Dog Management",
     event: "ICSIM 2025 (Singapore Institute of Electronics)",
+    certificateUrl: "https://lbfinanceplc-my.sharepoint.com/:b:/g/personal/menushae_lbfinance_lk/IQCdULGoCkE8TYVR95ZtfrlaAa33HRRuLIS_VPjGgvVAW6I?e=3HDjop",
   },
   publication: {
     title: "Intelligent Systems for Comprehensive Dog Management",

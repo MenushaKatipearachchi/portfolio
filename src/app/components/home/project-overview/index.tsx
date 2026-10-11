@@ -17,6 +17,14 @@ const ProjectOverview = () => {
                 <h4>{projectOverviewData.award.title}</h4>
                 <p>{projectOverviewData.award.project}</p>
                 <p>{projectOverviewData.award.event}</p>
+                <Link
+                  href={projectOverviewData.award.certificateUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-fit text-primary underline underline-offset-4"
+                >
+                  Download Certificate
+                </Link>
               </div>
             </div>
 
