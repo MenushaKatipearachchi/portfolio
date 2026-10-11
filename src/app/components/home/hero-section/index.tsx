@@ -81,7 +81,7 @@ const HeroSection = () => {
                 </div>
 
                 <Link
-                  href="https://shorturl.at/cIOsy"
+                  href="https://lbfinanceplc-my.sharepoint.com/:b:/g/personal/menushae_lbfinance_lk/IQDnT14eZLr7R5uJ9W89w_P0ATpyMj7Wlz7GvGviRezKT_0?e=fyCwoq"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-block p-0.5 rounded-full bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)] shrink-0"
