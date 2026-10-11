@@ -11,6 +11,17 @@ const ProjectOverview = () => {
           <div className="flex flex-col max-w-3xl mx-auto gap-10 sm:gap-16 px-4 sm:px-7 py-9 md:py-16">
             <div className="flex flex-col xs:flex-row items-start gap-5 xs:gap-10 md:gap-28 lg:gap-5">
               <p className="max-w-fit lg:max-w-2xs w-full text-sm tracking-[2px] text-primary uppercase font-medium">
+                Awards and Achievements
+              </p>
+              <div className="flex flex-col gap-2.5">
+                <h4>{projectOverviewData.award.title}</h4>
+                <p>{projectOverviewData.award.project}</p>
+                <p>{projectOverviewData.award.event}</p>
+              </div>
+            </div>
+
+            <div className="flex flex-col xs:flex-row items-start gap-5 xs:gap-10 md:gap-28 lg:gap-5">
+              <p className="max-w-fit lg:max-w-2xs w-full text-sm tracking-[2px] text-primary uppercase font-medium">
                 Publication
               </p>
               <div className="flex flex-col gap-2.5">

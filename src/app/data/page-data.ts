@@ -31,17 +31,30 @@ export type Reference = {
 
 export type ProjectOverviewData = {
   publication: Publication;
+  award: { title: string; project: string; event: string };
   references: Reference[];
 };
 
 export const experienceData: ExperienceItem[] = [
   {
     icon: "/images/icon/spark-icon.svg",
+    role: "Software Engineer",
+    company: "LB Finance PLC Corporate Office",
+    location: "Sri Lanka",
+    startLabel: "Aug 2026",
+    endLabel: "Present",
+    bulletPoints: [
+      "Created a new insurance commission process covering commission adjustments and commission reconciliation.",
+    ],
+    technologies: [],
+  },
+  {
+    icon: "/images/icon/spark-icon.svg",
     role: "Associate Software Engineer",
     company: "LB Finance PLC Corporate Office",
     location: "Sri Lanka",
     startLabel: "Apr 2025",
-    endLabel: "Present",
+    endLabel: "Aug 2026",
     bulletPoints: [
       "Systematized 4 core insurance workflows that were previously manual: quotation, application response, policy response, and renewal.",
       "Engineered renewal-notice ingestion from external insurers and reconciled matched versus unmatched records against internal data.",
@@ -52,13 +65,13 @@ export const experienceData: ExperienceItem[] = [
   },
   {
     icon: "/images/icon/tailwind-icon.svg",
-    role: "Software Engineering Intern",
+    role: "Software Engineer Intern",
     company: "Lanka Electricity Company (Pvt) Ltd",
     location: "Sri Lanka",
     startLabel: "Dec 2023",
     endLabel: "Apr 2025",
     bulletPoints: [
-      "Built RESTful APIs in Spring Boot and connected RabbitMQ-based SMS processing.",
+      "During a 17-month internship, built RESTful APIs in Spring Boot and connected RabbitMQ-based SMS processing.",
       "Produced unit tests and API documentation for core service endpoints.",
       "Tuned PL/SQL queries and resolved Java and Spring Boot defects to improve service reliability.",
       "Coordinated API deployments through WSO2 Identity Server.",
@@ -77,11 +90,33 @@ export const educationData: EducationItem[] = [
   {
     date: "2017 - 2020",
     title: "GCE Ordinary Level and Advanced Level",
-    subtitle: "Royal Institute International School",
+    subtitle: "Royal Institute International School - Secondary Education; Ordinary Level (2017): Passed; Advanced Level (2020): Passed",
   },
 ];
 
+export const skillGroups = [
+  { label: "Programming", tools: ["C#", "Java", "Python", "JavaScript", "PHP"] },
+  { label: "Frontend", tools: ["Angular", "TypeScript", "React.js", "Vite.js", "Flutter", "Tailwind CSS", "MUI", "Bootstrap", "PrimeNG", "PrimeFlex"] },
+  { label: "Backend", tools: ["Dotnet", "Spring Boot", "FastAPI", "Node.js", "Django REST Framework"] },
+  { label: "Databases", tools: ["SSMS", "MongoDB", "Firebase", "Oracle", "PL/SQL"] },
+  { label: "DevOps and Cloud", tools: ["Docker", "Kubernetes (AKS)", "Microsoft Azure"] },
+  { label: "Version Control", tools: ["Git", "GitHub", "GitLab", "Azure DevOps"] },
+  { label: "Microservices and Messaging", tools: ["RabbitMQ", "REST APIs"] },
+];
+
+export const softSkills = [
+  "Problem-solving and critical thinking",
+  "Fast learning and adaptability",
+  "Communication and teamwork",
+  "Time and stress management",
+];
+
 export const projectOverviewData: ProjectOverviewData = {
+  award: {
+    title: "Best Presentation Award",
+    project: "Intelligent Systems for Comprehensive Dog Management",
+    event: "ICSIM 2025 (Singapore Institute of Electronics)",
+  },
   publication: {
     title: "Intelligent Systems for Comprehensive Dog Management",
     venue: "ICIT '24",

@@ -49,6 +49,7 @@ const FeaturedWork = () => {
                     <Link href={value.href} target="_blank" rel="noreferrer">
                       <h4 className="min-h-12 leading-snug">{value.title}</h4>
                     </Link>
+                    <p className="text-sm text-secondary">{value.date}</p>
                     <p>{value.description}</p>
                     <div className="flex flex-wrap gap-2 pt-1">
                       {value.roles.map((role) => (

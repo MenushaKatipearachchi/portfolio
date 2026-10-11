@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Menusha Katipearachchi | Software Engineer",
-  description: "Portfolio of Menusha Eshan Katipearachchi - Software Engineer focused on full-stack development, microservices, and cloud engineering.",
+  description: "Portfolio of Menusha Eshan Katipearachchi - Software Engineer at LB Finance with nearly 3 years of experience in full-stack development, microservices, cloud computing, and DevOps.",
 };
 
 export default function RootLayout({

@@ -1,5 +1,6 @@
 export type FeaturedProject = {
   title: string;
+  date: string;
   description: string;
   roles: string[];
   image: string;
@@ -9,7 +10,8 @@ export type FeaturedProject = {
 
 export const featuredWorkData: FeaturedProject[] = [
   {
-    title: "Ceylon Voyages - Tourism Review System",
+    title: "CeylonVoyages - Tourism Review System",
+    date: "Jan 2023",
     description:
       "Displayed ratings and reviews for 2 travel categories, hotels and restaurants, with map-based place discovery.",
     roles: ["MERN Stack", "Redux", "Tailwind CSS"],
@@ -17,15 +19,17 @@ export const featuredWorkData: FeaturedProject[] = [
     href: "https://github.com/MenushaKatipearachchi/AF_PROJECT_G34",
   },
   {
-    title: "WellnessRoots",
+    title: "WellnessRoots - Herbal and Ayurveda Marketplace",
+    date: "Jan 2023",
     description:
-      "WellnessRoots, a web-based platform, offers top-notch Ayurvedic skincare and pharmaceuticals. Customers can create accounts, browse, order, and pay securely.",
-    roles: ["React.js", "Node.js", "MongoDB", "Docker", "Kubernetes"],
+      "Built PayPal checkout and a community-driven review workflow for a herbal and Ayurveda marketplace, enabling secure checkout and trust-building feedback.",
+    roles: ["React.js", "Node.js", "MongoDB", "Docker", "Kubernetes", "Microsoft Azure"],
     image: "/images/feature-work/WellnessRoots.jpg",
     href: "https://github.com/MenushaKatipearachchi/DS-Y3S1-PROJECT",
   },
   {
-    title: "PoochPaw - Intelligent Systems for Comprehensive Dog Management",
+    title: "PoochPaw - Intelligent Dog Management",
+    date: "2023 - 2024",
     description:
       "Combined machine learning and IoT into 2 capabilities for canine care: health monitoring and skin-disease detection.",
     roles: ["Python", "TensorFlow", "FastAPI", "Firebase", "Google Colab"],
@@ -34,6 +38,7 @@ export const featuredWorkData: FeaturedProject[] = [
   },
   {
     title: "GazeGenius - Vision Problem Detector",
+    date: "Jan 2023",
     description:
       "Created a mobile screening flow with 2 computerized assessments: eye-fatigue checks and color-blindness detection.",
     roles: ["Flutter", "Firebase", "Google ML Kit", "TensorFlow Lite"],
@@ -42,8 +47,9 @@ export const featuredWorkData: FeaturedProject[] = [
   },
   {
     title: "LECO SMS with RabbitMQ Integration",
+    date: "2023 - 2024",
     description:
-      "Orchestrated SMS processing with RabbitMQ and linked workflows with the Hutch API across 2 connected services.",
+      "Created an asynchronous SMS workflow with RabbitMQ, connecting 2 internal services and 1 Hutch telecom API endpoint.",
     roles: ["Java", "Spring Boot", "RabbitMQ", "Django REST Framework", "Oracle DB"],
     image: "/images/feature-work/LECO SMS with RabbitMQ Integration.png",
     imageFit: "cover",
